@@ -1,0 +1,19 @@
+.header {
+    background-color: #2B4074;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.menu_button {
+    display: flex;
+    
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+}
+
+.header__logo {
+    width: 100px;
+    height: 65.73px;
+}
