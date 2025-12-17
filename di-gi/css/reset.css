@@ -92,8 +92,7 @@ hr {
 input, select {
     vertical-align:middle;
 }
-button{
+button {
     border: none;
     box-shadow: none;
-    cursor: pointer;
 }

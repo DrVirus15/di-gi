@@ -5,12 +5,14 @@
     --background-color-white: #FFFFFF;
     --background-button-color: #F9F6E5;
     --text-font-family-main: 'Roboto Condensed', sans-serif;
-    --text-font-famuly-buttons: 'Roboto', sans-serif;
-
+    --text-font-family-other: 'Roboto', sans-serif;
 }
-
+button {
+    cursor: pointer;
+}
 .main {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -19,8 +21,8 @@
     background-color: var(--background-color-dark);
     justify-content: space-between;
     align-items: center;
-    padding-left: 153px;
-    padding-right: 135px;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
 }
 
@@ -59,21 +61,24 @@
     font-family: var(--text-font-family-main);
     font-size: 24px;
     font-weight: 400;
-    width: 800px;
 }
 
+main_title {
+    display: flex;
+    flex-direction: column;
+}
 .title {
     display: flex;
     justify-content: center;
     font-family: var(--text-font-family-main);
     font-weight: 400;
-    width: 400px;
     font-size: 96px;
     line-height: 96px;
     letter-spacing: 2px;
     text-align: center;
     vertical-align: bottom;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .read_more_btn {
@@ -82,7 +87,7 @@
     border-radius: 3px;
     font-size: 18px;
     font-weight: 400;
-    font-family: var(--text-font-famuly-buttons);
+    font-family: var(--text-font-family-other);
     color: var(--text-coolor-white);
     width: 200px;
     height: 50px;
@@ -163,25 +168,61 @@
     width: 200px;
     height: 50px;
     background: var(--background-button-color);
-    font: var(--text-font-famuly-buttons);
+    font-family: var(--text-font-family-other);
+    color: var(--background-color-dark);
+    font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     border-radius: 3px;
 }
+
 .cta_text_wrapper {
     display: flex;
     flex-direction: column;
 }
+
 .cta_text_wrapper h1.cta_text {
     margin: 0;
     font-weight: 500;
-    font-family: var(--text-font-famuly-buttons);
+    font-family: var(--text-font-family-other);
     width: 100%;
 }
+
 .cta_text {
     font-family: 'Dosis', sans-serif;
     color: var(--text-coolor-white);
     width: 60%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.services_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+}
+.services_head {
+    font-family: var(--text-font-family-main);
+    font-size: 48px;
+    color: var(--background-color-dark);
+    font-weight: 400;
+}
+.services_main {
+    font-family: var(--text-font-family-other);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--text-color-dark);
+    margin-bottom: auto;
+}
+.services_content {
+    font-family: var(--text-font-family-other);
+    color: var(--background-color-dark);
+    font-size: 18px;
+    margin-top: auto;
 }
