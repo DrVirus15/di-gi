@@ -281,7 +281,7 @@ main_title {
 
 .item_hover_content {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     /* Позиція тексту знизу */
     left: 0;
     right: 0;
@@ -317,8 +317,10 @@ main_title {
 
 .service_image {
     margin-top: 20%;
-    filter: brightness(0) saturate(100%) invert(21%) sepia(35%) saturate(1661%) hue-rotate(198deg) brightness(96%) contrast(92%);
-    transition: filter 0.3s ease;
+    filter: brightness(0) invert(24%) sepia(8%) saturate(4245%) hue-rotate(186deg) brightness(95%) contrast(93%);
+
+    /*filter: brightness(0) saturate(100%) invert(21%) sepia(35%) saturate(1661%) 
+    hue-rotate(198deg) brightness(96%) contrast(92%);*/
 }
 
 .hover_text {
@@ -326,7 +328,7 @@ main_title {
     font-size: 16px;
     color: var(--text-color-button-dark);
     margin-top: 5%;
-    margin-bottom: 7%;
+    margin-bottom: 10%;
     font-weight: 500;
 }
 
