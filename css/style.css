@@ -1,5 +1,5 @@
 :root {
-    --text-coolor-white: #ffffff;
+    --text-color-white: #ffffff;
     --text-color-dark: #4A4A4A;
     --text-color-button-dark: #9b9b9b;
     --background-color-dark: #2B4074;
@@ -44,7 +44,7 @@ button {
 }
 
 .intro {
-    color: var(--text-coolor-white);
+    color: var(--text-color-white);
     font-family: var(--text-font-family-main-condensed);
     font-weight: 400;
     font-size: 24px;
@@ -67,7 +67,7 @@ button {
     font-weight: 400;
 }
 
-main_title {
+.main_title {
     display: flex;
     flex-direction: column;
 }
@@ -93,7 +93,7 @@ main_title {
     font-size: 18px;
     font-weight: 400;
     font-family: var(--text-font-family-other);
-    color: var(--text-coolor-white);
+    color: var(--text-color-white);
     width: 200px;
     height: 50px;
 }
@@ -195,7 +195,7 @@ main_title {
 
 .cta_text {
     font-family: 'Dosis', sans-serif;
-    color: var(--text-coolor-white);
+    color: var(--text-color-white);
     width: 60%;
     margin-top: 2%;
     margin-bottom: 2%;

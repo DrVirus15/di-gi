@@ -1,12 +1,10 @@
-@import url("../css/style.css");
 .recent_work {
     display: flex;
     flex-direction: column;
-
+    background-color: var(--background-button-color);
 }
 .title h1{
     font-family: var(--text-font-family-main-condensed);
     font-size: 48px;
     font-weight: 400;
-    
 }
