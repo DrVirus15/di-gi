@@ -10,6 +10,8 @@
     text-align: center;
     font-size: 48px;
     position: relative;
+    margin-bottom: 80px;
+    padding-top: 60px;
     padding-bottom: 30px;
 }
 
@@ -25,6 +27,7 @@
 }
 
 .news_content {
+    margin: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 30px;
@@ -33,7 +36,6 @@
 .news_block {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
     align-self: self-start;
     border-radius: 3px;
     overflow: hidden;
