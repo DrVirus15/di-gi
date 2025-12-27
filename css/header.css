@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    padding-left: 11%;
     padding-right: 9%;
     display: flex;
 }
@@ -20,4 +19,15 @@
 .header__logo {
     width: 100px;
     height: 65.73px;
+}
+
+.nav-menu {
+    background-color: var(--background-button-color);
+    font-family: var(--text-font-family-other);
+    color: var(--text-color-button-dark);
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
 }
