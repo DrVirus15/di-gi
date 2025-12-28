@@ -5,6 +5,7 @@
     --text-color-button-dark: #9b9b9b;
     --text-color-button-white: #F9F6E5;
     --text-color-dark-blue: #2B4074;
+    --text-color-button-hover-white: #929292;
     --background-color-dark: #2B4074;
     --background-color-white: #FFFFFF;
     --background-button-color: #F9F6E5;
@@ -25,10 +26,11 @@ section {
     padding-left: 10%;
     padding-right: 2%;
 }
+
 .hover_info a {
-    text-decoration: none; 
-    outline: none; 
-    gap: 0;        
+    text-decoration: none;
+    outline: none;
+    gap: 0;
 }
 
 .main {
@@ -36,4 +38,12 @@ section {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+@media screen and (max-width: 320px) {
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

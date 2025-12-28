@@ -25,8 +25,8 @@
     opacity: 0.5;
     z-index: 1;
 }
-
-.intro > * {
+/* щоб затемнений фон не затемняв усі інші елементи*/
+.intro>* {
     z-index: 2;
 }
 
@@ -67,6 +67,11 @@
     height: 50px;
 }
 
+.read_more_btn:hover {
+    background-color: var(--background-button-color);
+    color: var(--text-color-button-hover-white);
+}
+
 .carousel {
     display: flex;
     justify-content: space-between;
@@ -83,17 +88,14 @@
     justify-content: space-between;
 }
 
-.left_arrow_btn .material-symbols-sharp {
+.left_arrow_btn .material-symbols-sharp,
+.right_arrow_btn .material-symbols-sharp {
     font-size: 50px;
     color: var(--background-color-white);
 }
 
-.right_arrow_btn .material-symbols-sharp {
-    font-size: 50px;
-    color: #929292;
-}
-
-.left_arrow_btn {
+.left_arrow_btn,
+.right_arrow_btn {
     background: var(--background-color-dark);
     width: 70px;
     height: 70px;
@@ -101,12 +103,14 @@
     padding-left: 10px;
 }
 
-.right_arrow_btn {
+.right_arrow_btn:hover,
+.left_arrow_btn:hover {
     background: var(--background-button-color);
-    width: 70px;
-    height: 70px;
-    padding-top: 6px;
-    padding-left: 10px;
+}
+
+.left_arrow_btn:hover .material-symbols-sharp,
+.right_arrow_btn:hover .material-symbols-sharp {
+    color: var(--text-color-button-hover-white);
 }
 
 .pagination {
@@ -130,4 +134,29 @@
 .intro .indicator.active {
     background-color: transparent;
     cursor: default;
+}
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 84px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 640px) {
+    
+}
+@media screen and (max-width: 320px) {
+    .title {
+        font-size: 28px;
+    }
+    .read_more_btn {
+        display: none;
+    }
+    .arrows {
+        display: none;
+    }
 }

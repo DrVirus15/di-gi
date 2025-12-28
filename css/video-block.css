@@ -26,6 +26,14 @@
     border-radius: 3px;
     margin-right: 20px;
     height: auto;
+    max-width: 100%;
+}
+
+.video img,
+img.video {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .video_title {
@@ -67,4 +75,10 @@
     height: 60px;
     background-color: var(--background-color-dark);
     border-radius: 3px;
+}
+
+@media screen and (max-width: 320px) {
+    .video_block {
+        padding: 20px;
+    }
 }
