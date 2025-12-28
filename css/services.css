@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding-left: 2%;
+    padding: 0;
 }
 
 .services_text_description {
@@ -15,6 +15,7 @@
     justify-content: space-between;
     padding: 2.7%;
     max-width: 30%;
+     padding-left: 10%;
 }
 
 .services_text_description>div {
@@ -55,7 +56,7 @@
 .services_text_content {
     font-family: var(--text-font-family-other);
     line-height: 24px;
-    color: var(--background-color-dark);
+    color: var(--text-color-dark-gray);
     font-size: 18px;
 }
 
@@ -144,6 +145,7 @@
 @media screen and (max-width: 1024px) {
     .services_text_description {
         max-width: none;
+        padding-left: 46px;
     }
     .services_text_head {
         width: 100%;
@@ -166,5 +168,8 @@
 @media screen and (max-width: 320px){
     .services_items {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .services_text_description {
+        padding: 0;
     }
 }
