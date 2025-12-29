@@ -24,8 +24,7 @@
 .video img,
 img.video {
     width: 100%;
-    height: auto;
-    display: block;
+    object-fit: cover;
 }
 
 .video_title {
@@ -75,6 +74,10 @@ img.video {
         width: 400px;
     }
 
+    .video_block {
+        padding-left: 5%;
+    }
+
     .video_title {
         padding-bottom: 30px;
         margin-bottom: 20px;
@@ -89,6 +92,11 @@ img.video {
 
     .video {
         max-width: 240px;
+        display: block;
+    }
+
+    .video_title::after {
+        width: 88px;
     }
 
     .video_content {
@@ -109,6 +117,22 @@ img.video {
 
     .video_content {
         align-items: center;
+        max-width: 90%;
+    }
+
+    .video_title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .video_description {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .play_video_btn {
+        margin-bottom: 20px;
     }
 }
 
@@ -116,5 +140,10 @@ img.video {
     .video_block {
         padding: 20px;
     }
-
+    .video_content {
+        max-width: 100%;
+    }
+    .video_title::after {
+        width: 45px;
+    }
 }
