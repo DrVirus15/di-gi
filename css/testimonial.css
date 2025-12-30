@@ -15,6 +15,9 @@
     line-height: 0;
 }
 
+.br_mobile {
+    display: none;
+}
 .quotes_carousel {
     display: flex;
     flex-direction: column;
@@ -54,4 +57,27 @@
 .testimonial .indicator.active {
     background-color: transparent;
     cursor: default;
+}
+@media screen and (max-width: 1024px) {
+    .quote_text {
+        font-size: 32px;
+    }
+    .cite_wrapper {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+   .br_mobile {
+    display: inline;
+   }
+}
+@media screen and (max-width: 430px) {
+  .quote_text {
+    font-size: 24px;
+  }
+  .testimonial {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
