@@ -26,12 +26,12 @@
     opacity: 0.5;
     z-index: 1;
 }
-/* щоб затемнений фон не затемняв усі інші елементи*/
+
 .intro>* {
     z-index: 2;
 }
 
-.intro_text {
+.intro__carousel_text {
     font-family: var(--text-font-family-main-condensed);
     font-size: 24px;
     font-weight: 400;
@@ -41,6 +41,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 .main_title {
     display: flex;
     flex-direction: column;
@@ -62,6 +63,7 @@
 }
 
 .read_more_btn {
+    margin-top: 10px;
     background-color: var(--background-color-dark);
     text-transform: uppercase;
     border-radius: 3px;
@@ -121,28 +123,40 @@
     color: var(--text-color-button-hover-white);
 }
 
-.pagination {
-    display: flex;
-    justify-content: space-evenly;
-    width: 70px;
+.intro__carousel .owl-dots {
+    position: absolute;
+    bottom: -155px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.indicator {
-    border-radius: 50%;
-    height: 10px;
+.intro .intro__carousel .owl-dots .owl-dot span {
     width: 10px;
-    padding: 0;
+    height: 10px;
+    margin: 5px 7px;
+    background-color: var(--background-button-color);
+    transition: opacity .2s ease;
+    border-radius: 30px;
 }
 
-.intro .indicator {
-    background-color: var(--background-color-white);
-    border: 1px var(--background-color-white) solid;
-}
-
-.intro .indicator.active {
+.intro .intro__carousel .owl-dot.active span {
     background-color: transparent;
-    cursor: default;
+    border: 1px solid #fff;
 }
+.intro__carousel {
+    width: 100%;
+}
+.intro .intro__carousel .owl-nav {
+    position: absolute;
+    display: flex;
+    right: 0;
+    width: 70px;
+    margin: 0;
+    height: 141px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 1024px) {
     .title {
         font-size: 84px;
@@ -156,35 +170,36 @@
         line-height: 60px;
     }
 }
-@media screen and (max-width: 640px) {
-    .intro_text_wrapper {
-        padding-top: 0;
-    }
 
-    
-    .intro_text {
+@media screen and (max-width: 640px) {
+
+    .intro__carousel_text {
         display: none;
     }
+
     .title {
         position: relative;
         padding-bottom: 20px;
     }
+
     .title::after {
-    content: "";
-    bottom: 0;
-    position: absolute;
-    left: 50%;
-    height: 8px;
-    width: 60px;
-    transform: translateX(-50%);
-    background-color: var(--text-color-dark);
+        content: "";
+        bottom: 0;
+        position: absolute;
+        left: 50%;
+        height: 8px;
+        width: 60px;
+        transform: translateX(-50%);
+        background-color: var(--text-color-dark);
+    }
 }
-}
+
 @media screen and (max-width: 320px) {
-    .carousel { 
+    .carousel {
         padding-top: 0px;
         padding-bottom: 20px;
     }
+
     .title {
         font-size: 28px;
         letter-spacing: 0;
@@ -192,9 +207,11 @@
         padding-top: 36px;
         padding-bottom: 30px;
     }
+
     .read_more_btn {
         display: none;
     }
+
     .arrows {
         display: none;
     }
