@@ -1,12 +1,25 @@
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel(
+  $(".testimonial__carousel").owlCarousel(
+    {
+      items: 1,
+      loop: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 6000
+    }
+  );
+});
+$(document).ready(function () {
+  $(".intro__carousel").owlCarousel(
     {
       items: 1,
       loop: true,
       dots: true,
       nav: true,
-      autoplay: true,
-      autoplayTimeout: 6000
+      navText: [
+      '<span class="material-symbols-sharp">chevron_left</span>',
+      '<span class="material-symbols-sharp">chevron_right</span>'
+    ],
     }
   );
 });
