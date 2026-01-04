@@ -4,6 +4,10 @@
     gap: 50px;
     justify-content: space-around;
     align-items: stretch;
+    margin-top: -30px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    background-color: #fff;
 }
 
 .video_content {

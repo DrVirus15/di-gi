@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 0px;
+    padding-bottom: 30px;
     background: linear-gradient(to bottom, var(--background-color-dark) 0%, #ffffff 100%);
 }
 
@@ -12,7 +13,7 @@
     padding: 40px;
 }
 
-.recent_work_title h1 {
+.recent_work_title h2 {
     font-family: var(--text-font-family-main-condensed);
     font-size: 48px;
     font-weight: 400;
@@ -22,7 +23,7 @@
     position: relative;
 }
 
-.recent_work_title h1::after {
+.recent_work_title h2::after {
     content: "";
     position: absolute;
     bottom: 0;

@@ -17,7 +17,7 @@
     padding-left: 10%;
 }
 
-.services_text_description>div {
+.services_text_description>* {
     margin-top: 20px;
     margin-bottom: 20px;
 }

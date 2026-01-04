@@ -29,7 +29,7 @@
     
 }
 
-h1.cta_text {
+h2.cta_text {
     margin-bottom: 2%;
     font-weight: 500;
     font-size: 24px;
@@ -51,7 +51,7 @@ p.cta_text {
 }
 
 @media screen and (max-width: 1024px) {
-    h1.cta_text {
+    h2.cta_text {
         font-size: 18px;
         line-height: 18px;
     }
@@ -70,7 +70,7 @@ p.cta_text {
         padding-bottom: 30px;
         width: 100%;
     }
-    h1.cta_text {
+    h2.cta_text {
         font-size: 24px;
         line-height: 24px;
         text-align: center;
