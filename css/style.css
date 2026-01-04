@@ -28,12 +28,6 @@ section {
     padding-right: 4%;
 }
 
-.hover_info a {
-    text-decoration: none;
-    outline: none;
-    gap: 0;
-}
-
 body {
     max-width: 1440px;
     width: 100%;
@@ -729,6 +723,12 @@ p.cta_text {
     opacity: 0;
     background-color: var(--background-button-color);
     border-radius: 3px;
+}
+
+.hover_info a {
+    text-decoration: none;
+    outline: none;
+    gap: 0;
 }
 
 .hover_info svg {
