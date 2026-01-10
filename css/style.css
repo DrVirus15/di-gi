@@ -19,19 +19,26 @@ html {
     scroll-behavior: smooth;
 }
 
-button {
+.button {
     cursor: pointer;
+    padding: 0 35px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 3px;
+    height: 50px;
+    font-family: var(--text-font-family-other);
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 section {
     padding-left: 10%;
     padding-right: 4%;
-}
-
-body {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
 }
 
 @media screen and (max-width: 320px) {
@@ -45,7 +52,7 @@ body {
     header
 =============================================*/
 
-#header {
+.header {
     background-color: var(--background-color-dark);
     justify-content: space-between;
     align-items: center;
@@ -196,19 +203,12 @@ input:checked~.header__nav_menu {
     margin-top: 10px;
     margin-bottom: 150px;
     background-color: var(--background-color-dark);
-    text-transform: uppercase;
-    border-radius: 3px;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: var(--text-font-family-other);
     color: var(--text-color-white);
-    width: 200px;
-    height: 50px;
 }
 
 .read_more_btn:hover {
     background-color: var(--background-button-color);
-    color: var(--text-color-button-hover-white);
+    color: var(--text-color-dark-blue);
 }
 
 .intro__carousel .owl-dots {
@@ -352,15 +352,15 @@ input:checked~.header__nav_menu {
 }
 
 .buy_btn {
-    width: 200px;
-    height: 50px;
+    padding: 0 10px;
     background: var(--background-button-color);
-    font-family: var(--text-font-family-other);
     color: var(--background-color-dark);
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    border-radius: 3px;
+}
+
+.buy_btn:hover {
+    color: var(--text-color-button-white);
+    background-color: var(--background-color-dark);
+    border: var(--background-button-color) solid 1px;
 }
 
 .cta_text_wrapper {
@@ -518,6 +518,7 @@ p.cta_text {
     min-width: 222px;
     min-height: 255px;
     position: relative;
+
 }
 
 .services__item {
@@ -551,7 +552,8 @@ p.cta_text {
     transition: all 0.5s ease;
 }
 
-.service_image, .item_name {
+.service_image,
+.item_name {
     transition: all 0.5s ease;
 }
 
@@ -861,16 +863,16 @@ img.video {
 }
 
 .play_video_btn {
-    font-family: var(--text-font-family-other);
-    font-weight: 500;
-    font-size: 18px;
     color: var(--text-color-button-white);
     margin-top: 10px;
-    text-transform: uppercase;
-    width: 230px;
-    height: 60px;
     background-color: var(--background-color-dark);
-    border-radius: 3px;
+    max-width: 230px;
+}
+
+.play_video_btn:hover {
+    background-color: var(--background-button-color);
+    color: var(--text-color-dark-blue);
+    border: solid 1px var(--background-color-dark);
 }
 
 /*============================================
